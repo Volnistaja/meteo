@@ -44,8 +44,14 @@ footer {
 }
 .weather-app-data {
   display: flex;
-  justify-content: space-between;
 }
+
+.weather-app-temperature-container {
+  display: block;
+  margin-left: auto;
+  
+}
+
 main {
   padding: 30px 0;
 }
@@ -68,14 +74,14 @@ main {
 }
 .weather-temperature {
   font-size: 80px;
-  margin-left: 5px;
+  line-height: 88px;
   font-weight: bold;
 }
-.weather-icon {
+.weather-app-icon {
   font-size: 40px;
-  margin-top: 20px;
+  line-height: 88px;
 }
 .temperature-unit {
-  margin-top: 20px;
+margin-top: 10px;
   font-size: 20px;
 }

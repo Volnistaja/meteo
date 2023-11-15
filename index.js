@@ -13,10 +13,14 @@ function updateWeather(response) {
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
 
   let timeElement = document.querySelector("#time");
-  
- let date = new Date(response.data.time * 1000);
 
- timeElement.innerHTML = formatDate(date);
+  let date = new Date(response.data.time * 1000);
+
+  let iconElement = document.querySelector("#icon");
+
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+
+  timeElement.innerHTML = formatDate(date);
 }
 
 function formatDate(date) {
@@ -32,11 +36,10 @@ function formatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  if (minutes<10) {
-    minutes= `0${minutes}`;
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
   }
   return `${day} ${hours}:${minutes}`;
-
 }
 
 function searchCity(city) {
@@ -55,3 +58,5 @@ function search(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", search);
+
+searchCity("Paris");
