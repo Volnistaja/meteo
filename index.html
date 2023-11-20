@@ -30,6 +30,7 @@
       <main>
         <div class="weather-app-data">
           <div>
+          
             <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
               <span id="time"></span>, <span id="description"> clouds</span>
@@ -38,22 +39,42 @@
               <strong id="wind-speed">3.13km/h</strong>
             </p>
           </div>
+
           <div class="weather-app-temperature-container">
-            <div id="icon"> <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
-              class="weather-app-icon"
-            /></div>
-           
+            <div id="icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+                class="weather-app-icon"
+              />
+            </div>
           </div>
           <div class="weather-temperature" id="temperature">12</div>
           <div class="temperature-unit">&deg;C</div>
+        </div>
+
+        <div class="weather-forecast">
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
+            <div class="weather-firecast-icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-night.png"
+                class="weather-app-icon"
+              />
+            </div>
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperature-max">
+                <strong>15&deg;</strong>
+              </span>
+              <span class="weather-forecast-temperature-min">9&deg;</span>
+            </div>
+          </div>
         </div>
       </main>
       <footer>
         Coded by
         <a href="https://github.com/Volnistaja" target="_blank">
-          Julija Bezdele
-        </a>,
+          Julija Bezdele </a
+        >,
 
         <a href="https://github.com/Volnistaja/meteo" target="_blank"
           >open-sourced on GitHub</a
