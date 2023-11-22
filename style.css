@@ -100,8 +100,8 @@ main {
   opacity: 0.5;
 }
 .weather-forecast-icon {
-  height: 20px;
-  width: 20px;
+  height: 48px;
+  width: 48px;
 }
 .weather-forecast-temperatures {
   font-size: 13px;
